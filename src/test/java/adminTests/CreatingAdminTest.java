@@ -30,9 +30,9 @@ public class CreatingAdminTest {
     }
 
     @Test
-    @DisplayName("Создаем нового курьера")
+    @DisplayName("Создаем нового администратора")
     public void successCreatingCourierTest() {
-        ValidatableResponse createResponse = adminClient.createCourier(admin).statusCode(201);
+        ValidatableResponse createResponse = adminClient.createAdmin(admin).statusCode(201);
         createResponse.assertThat().body("ok", equalTo(true));
     }
 }

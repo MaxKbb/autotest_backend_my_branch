@@ -23,7 +23,7 @@ public class LoginAdminTest {
     public void setUp() {
         adminClient = new AdminClient();
         admin = Admin.getRandomCourier();
-        adminClient.createCourier(admin);
+        adminClient.createAdmin(admin);
         adminCredentials = new AdminCredential(admin.getLogin(), admin.getPassword());
     }
 

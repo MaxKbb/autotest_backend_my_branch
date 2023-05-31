@@ -12,7 +12,7 @@ public class AdminClient extends Client {
     private static final String COURIER_LOGIN = "api/v1/courier/login";
 
     @Step("Создание нового администратора")
-    public ValidatableResponse createCourier(Admin admin) {
+    public ValidatableResponse createAdmin(Admin admin) {
         return given()
                 .header("Content-type", "application/json")
                 .and()
