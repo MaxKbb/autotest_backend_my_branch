@@ -19,7 +19,7 @@ public class CreatingAdminTest {
     @Before
     public void setUp() {
         adminClient = new AdminClient();
-        admin = Admin.getRandomCourier();
+        admin = Admin.getRandomAdmin();
     }
 
     @After

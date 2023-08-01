@@ -22,7 +22,7 @@ public class LoginAdminTest {
     @Before
     public void setUp() {
         adminClient = new AdminClient();
-        admin = Admin.getRandomCourier();
+        admin = Admin.getRandomAdmin();
         adminClient.createAdmin(admin);
         adminCredentials = new AdminCredential(admin.getLogin(), admin.getPassword());
     }

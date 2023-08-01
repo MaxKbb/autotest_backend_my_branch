@@ -18,7 +18,7 @@ public class Admin {
         this.firstName = firstName;
     }
 
-    public static Admin getRandomCourier() {
+    public static Admin getRandomAdmin() {
         final String courierLogin = RandomStringUtils.random(10, true, true);
         final String courierPassword = RandomStringUtils.random(10, true, true);
         final String courierFirstName = RandomStringUtils.randomAlphabetic(10);
